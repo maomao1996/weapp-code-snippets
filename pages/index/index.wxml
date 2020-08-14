@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="title">weapp-code-snippets</view>
+  <view class="desc">记录微信小程序开发中的血与泪</view>
+  <view class="desc">（自定义组件，常用方法等）</view>
+</view>

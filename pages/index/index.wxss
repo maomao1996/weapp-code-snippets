@@ -1,0 +1,15 @@
+.title {
+  margin: 12rpx 0 30rpx;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  text-transform: uppercase;
+}
+
+.desc {
+  color: #999;
+  font-weight: normal;
+  font-size: 24rpx;
+  letter-spacing: 0.12rem;
+}

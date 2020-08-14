@@ -1,0 +1,19 @@
+{
+  "name": "weapp-code-snippets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "记录微信小程序开发中的血与泪（自定义组件，常用方法等）",
+  "author": "maomao1996 <1714487678@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maomao1996/weapp-code-snippets.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maomao1996/weapp-code-snippets/issues"
+  },
+  "homepage": "https://github.com/maomao1996/weapp-code-snippets#readme",
+  "devDependencies": {
+    "miniprogram-api-typings": "^2.11.0"
+  }
+}
