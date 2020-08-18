@@ -1,6 +1,6 @@
 .title {
   margin: 12rpx 0 30rpx;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-size: 40rpx;
   letter-spacing: 10rpx;
