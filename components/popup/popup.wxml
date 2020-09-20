@@ -1,0 +1,8 @@
+<!-- 公共弹窗组件 -->
+<view class="popup {{visible ? 'popup-show' : ''}} {{transition ? 'popup-transition' : ''}}" catch:touchmove="noop">
+  <view wx:if="{{mask}}" class="popup-mask" style="z-index:{{maskZIndex}};{{maskStyle}}" bind:tap="handleClickOverlay" />
+  <view class="popup-content {{round ? 'popup-round': ''}} {{'popup-' + position}} {{customCls}}" style="z-index:{{zIndex}};{{customStyle}}">
+    <slot />
+    <image wx:if="{{closeable}}" class="popup-close" src="./icons/close.svg" bind:tap="handleClickClose" />
+  </view>
+</view>

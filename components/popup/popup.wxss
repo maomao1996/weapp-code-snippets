@@ -1,0 +1,113 @@
+/* 遮罩层样式 */
+.popup-mask {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1995;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+/* 弹出层样式 */
+.popup-content {
+  overflow-y: auto;
+  position: fixed;
+  z-index: 1996;
+  max-height: 100%;
+  background-color: #fff;
+}
+
+.popup-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.popup-top {
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.popup-bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+.popup-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.popup-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+/* 圆角样式 */
+.popup-round.popup-center {
+  border-radius: 24rpx;
+}
+
+.popup-top.popup-round {
+  border-radius: 0 0 24rpx 24rpx;
+}
+
+.popup-bottom.popup-round {
+  border-radius: 24rpx 24rpx 0 0;
+}
+
+.popup-right.popup-round {
+  border-radius: 24rpx 0 0 24rpx;
+}
+
+.popup-left.popup-round {
+  border-radius: 0 24rpx 24rpx 0;
+}
+
+/* 关闭按钮样式 */
+.popup-close {
+  position: absolute;
+  top: 24rpx;
+  right: 24rpx;
+  z-index: 1;
+  padding: 6rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+/* 过渡效果 */
+.popup-transition .popup-mask,
+.popup-transition .popup-content {
+  transition: all 0.3s;
+}
+
+/* 显示弹出层 */
+.popup-show .popup-mask {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-show .popup-center {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-show .popup-top,
+.popup-show .popup-bottom {
+  transform: translateY(0);
+}
+
+.popup-show .popup-right,
+.popup-show .popup-left {
+  transform: translateX(0);
+}
