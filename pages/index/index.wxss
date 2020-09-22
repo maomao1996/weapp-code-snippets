@@ -1,9 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 180rpx 40rpx 40rpx;
+}
+
 .title {
-  margin: 12rpx 0 30rpx;
+  margin-bottom: 30rpx;
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-size: 40rpx;
-  letter-spacing: 10rpx;
+  letter-spacing: 8rpx;
   text-transform: uppercase;
 }
 
@@ -12,4 +20,39 @@
   font-weight: normal;
   font-size: 24rpx;
   letter-spacing: 0.12rem;
+}
+
+.nav {
+  box-sizing: border-box;
+  padding-top: 80rpx;
+  width: 100%;
+}
+
+.nav-title {
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: rgba(69, 90, 100, 0.6);
+}
+
+.nav-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 24rpx;
+  border-radius: 100rpx;
+  padding-left: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  color: #323233;
+  background: #f7f8fa;
+}
+
+.nav-icon {
+  position: absolute;
+  top: 50%;
+  right: 32rpx;
+  width: 32rpx;
+  height: 32rpx;
+  transform: translateY(-50%);
 }

@@ -20,13 +20,19 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
+    "useIsolateContext": true,
     "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
   },
   "compileType": "miniprogram",
   "libVersion": "2.11.1",
@@ -47,13 +53,29 @@
       "current": -1,
       "list": []
     },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
     "game": {
       "currentL": -1,
       "list": []
     },
-    "miniprogram": {
+    "gamePlugin": {
       "current": -1,
       "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": -1,
+          "name": "弹出层",
+          "pathName": "pages/popup/index",
+          "query": "",
+          "scene": null
+        }
+      ]
     }
   }
 }

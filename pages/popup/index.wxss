@@ -1,0 +1,20 @@
+button {
+  margin-bottom: 30rpx;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 24rpx;
+}
+
+.blue.blue {
+  background-color: #95b8d1;
+}
+
+.w500 {
+  width: 500rpx;
+}
+
+.h500 {
+  height: 500rpx;
+}

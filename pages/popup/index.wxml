@@ -1,0 +1,84 @@
+<view class="container">
+  <button type="primary" bindtap="onTap" data-type="center">中间弹出</button>
+  <button type="primary" bindtap="onTap" data-type="top">上边弹出</button>
+  <button type="primary" bindtap="onTap" data-type="bottom">下边弹出</button>
+  <button type="primary" bindtap="onTap" data-type="right">右边弹出</button>
+  <button type="primary" bindtap="onTap" data-type="left">左边弹出</button>
+  <button type="primary" bindtap="onTap" data-type="all">打开全部</button>
+  <button type="primary" bindtap="onTap" data-type="multiple1">开启套娃</button>
+  <button type="primary" bindtap="onTap" data-type="round">显示圆角</button>
+  <button type="primary" bindtap="onTap" data-type="closeable">显示关闭按钮</button>
+  <button type="primary" bindtap="onTap" data-type="mask">隐藏遮罩</button>
+  <button type="primary" bindtap="onTap" data-type="transition">关闭过渡效果</button>
+  <button type="primary" bindtap="onTap" data-type="input">输入文案</button>
+  <button type="primary" bindtap="onTap" data-type="scroll">内部滚动</button>
+</view>
+<popup visible="{{visible.center}}" customCls="w500 h500">
+  <view class="box">我是一个 popup 组件(中间弹出)</view>
+</popup>
+<popup visible="{{visible.top}}" position="top" customStyle="height:500rpx">
+  <view class="box">我是一个 popup 组件(上边弹出)</view>
+</popup>
+<popup visible="{{visible.bottom}}" position="bottom" customCls="h500">
+  <view class="box">我是一个 popup 组件(下边弹出)</view>
+</popup>
+<popup visible="{{visible.right}}" position="right" customCls="w500">
+  <view class="box">我是一个 popup 组件(右边弹出)</view>
+</popup>
+<popup visible="{{visible.left}}" position="left" customCls="w500">
+  <view class="box">我是一个 popup 组件(左边弹出)</view>
+</popup>
+<popup visible="{{visible.multiple1}}" position="bottom" customCls="h500">
+  <view class="box">
+    我是一个 popup 组件(开启套娃)
+    <button type="primary" bindtap="onTap" data-type="multiple2">下边弹出一个娃</button>
+  </view>
+</popup>
+<popup visible="{{visible.multiple2}}" position="bottom" customStyle="height:300rpx">
+  <view class="box">我是一个 popup 组件(套在里面的)</view>
+</popup>
+<popup visible="{{visible.round}}" position="bottom" round customStyle="height:300rpx">
+  <view class="box">我是一个 popup 组件(显示圆角)</view>
+</popup>
+<popup visible="{{visible.closeable}}" position="bottom" round closeable customStyle="height:300rpx">
+  <view class="box">我是一个 popup 组件(显示关闭按钮)</view>
+</popup>
+<popup visible="{{visible.mask}}" position="bottom" mask="{{false}}" round closeable customCls="blue" customStyle="height:300rpx">
+  <view class="box">我是一个 popup 组件(隐藏遮罩)</view>
+</popup>
+<popup visible="{{visible.transition}}" position="bottom" transition="{{false}}" round customStyle="height:300rpx">
+  <view class="box">我是一个 popup 组件(关闭过渡效果)</view>
+</popup>
+<popup visible="{{visible.input}}" position="bottom" round customStyle="height:300rpx">
+  <view class="box">
+    我是一个 popup 组件(输入文案)
+    <view class="box">
+      <input class="weui-input" placeholder="输入文案1" />
+    </view>
+    <view class="box">
+      <input class="weui-input" placeholder="输入文案2" />
+    </view>
+  </view>
+</popup>
+<popup visible="{{visible.scroll}}" position="bottom" round>
+  <scroll-view scroll-y="{{true}}" class="h500">
+    <view class="box">
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+      <view>我是一个 popup 组件(滚动)</view>
+    </view>
+  </scroll-view>
+</popup>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Popup 弹出层",
+  "usingComponents": {
+    "popup": "/components/popup/popup"
+  }
+}
