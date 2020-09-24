@@ -14,43 +14,43 @@
   <button type="primary" bindtap="onTap" data-type="scroll">内部滚动</button>
   <button type="primary" bindtap="onTap" data-type="close">关闭回调</button>
 </view>
-<popup visible="{{visible.center}}" customCls="w500 h500">
+<popup visible="{{visible.center}}" custom-class="w500 h500">
   <view class="box">我是一个 popup 组件(中间弹出)</view>
 </popup>
-<popup visible="{{visible.top}}" position="top" customStyle="height:500rpx">
+<popup visible="{{visible.top}}" position="top" custom-style="height:500rpx">
   <view class="box">我是一个 popup 组件(上边弹出)</view>
 </popup>
-<popup visible="{{visible.bottom}}" position="bottom" customCls="h500">
+<popup visible="{{visible.bottom}}" position="bottom" custom-class="h500">
   <view class="box">我是一个 popup 组件(下边弹出)</view>
 </popup>
-<popup visible="{{visible.right}}" position="right" customCls="w500">
+<popup visible="{{visible.right}}" position="right" custom-class="w500">
   <view class="box">我是一个 popup 组件(右边弹出)</view>
 </popup>
-<popup visible="{{visible.left}}" position="left" customCls="w500">
+<popup visible="{{visible.left}}" position="left" custom-class="w500">
   <view class="box">我是一个 popup 组件(左边弹出)</view>
 </popup>
-<popup visible="{{visible.multiple1}}" position="bottom" customCls="h500">
+<popup visible="{{visible.multiple1}}" position="bottom" custom-class="h500">
   <view class="box">
     我是一个 popup 组件(开启套娃)
     <button type="primary" bindtap="onTap" data-type="multiple2">下边弹出一个娃</button>
   </view>
 </popup>
-<popup visible="{{visible.multiple2}}" position="bottom" customStyle="height:300rpx">
+<popup visible="{{visible.multiple2}}" position="bottom" custom-style="height:300rpx">
   <view class="box">我是一个 popup 组件(套在里面的)</view>
 </popup>
-<popup visible="{{visible.round}}" position="bottom" round customStyle="height:300rpx">
+<popup visible="{{visible.round}}" position="bottom" round custom-style="height:300rpx">
   <view class="box">我是一个 popup 组件(显示圆角)</view>
 </popup>
-<popup visible="{{visible.closeable}}" position="bottom" round closeable customStyle="height:300rpx">
+<popup visible="{{visible.closeable}}" position="bottom" round closeable custom-style="height:300rpx">
   <view class="box">我是一个 popup 组件(显示关闭按钮)</view>
 </popup>
-<popup visible="{{visible.mask}}" position="bottom" mask="{{false}}" round closeable customCls="blue" customStyle="height:300rpx">
+<popup visible="{{visible.mask}}" position="bottom" mask="{{false}}" round closeable custom-class="blue" custom-style="height:300rpx">
   <view class="box">我是一个 popup 组件(隐藏遮罩)</view>
 </popup>
-<popup visible="{{visible.transition}}" position="bottom" transition="{{false}}" round customStyle="height:300rpx">
+<popup visible="{{visible.transition}}" position="bottom" transition="{{false}}" round custom-style="height:300rpx">
   <view class="box">我是一个 popup 组件(关闭过渡效果)</view>
 </popup>
-<popup visible="{{visible.input}}" position="bottom" round customStyle="height:300rpx">
+<popup visible="{{visible.input}}" position="bottom" round custom-style="height:300rpx">
   <view class="box">
     我是一个 popup 组件(输入文案)
     <view class="box">
@@ -83,6 +83,6 @@
     </view>
   </scroll-view>
 </popup>
-<popup name="close" visible="{{visible.close}}" position="bottom" round customStyle="height:300rpx" bind:close="close" bind:closed="closed">
+<popup name="close" visible="{{visible.close}}" position="bottom" round custom-style="height:300rpx" bind:close="close" bind:closed="closed">
   <view class="box">我是一个 popup 组件(关闭回调)</view>
 </popup>

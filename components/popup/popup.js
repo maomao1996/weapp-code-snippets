@@ -2,9 +2,7 @@ let zIndex = 1996
 const nextZIndex = () => zIndex++
 
 Component({
-  options: {
-    addGlobalClass: true
-  },
+  externalClasses: ['custom-class'],
   properties: {
     // 弹窗名称用于区分弹窗，会通过自定义事件传递出去
     name: String,
@@ -24,11 +22,6 @@ Component({
     },
     // 是否显示关闭图标
     closeable: Boolean,
-    // 自定义内容区域 class
-    customCls: {
-      type: String,
-      value: ''
-    },
     // 自定义内容区域样式
     customStyle: {
       type: String,
