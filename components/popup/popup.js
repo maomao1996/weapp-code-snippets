@@ -6,7 +6,8 @@ Component({
     addGlobalClass: true
   },
   properties: {
-    class: String,
+    // 弹窗名称用于区分弹窗，会通过自定义事件传递出去
+    name: String,
     // 是否显示弹出层
     visible: {
       type: Boolean,
@@ -62,7 +63,7 @@ Component({
     transition: {
       type: Boolean,
       value: true
-    },
+    }
   },
   data: {
     maskZIndex: 1995,
@@ -81,7 +82,15 @@ Component({
     // 点击关闭图标
     handleClickClose() {
       this.setData({ visible: false })
-      this.triggerEvent('close')
+      // 关闭的回调
+      this.triggerEvent('close', this.data.name)
+    },
+    handleTransitionEnd() {
+      if (this.data.visible) {
+        return
+      }
+      // 关闭动画结束时的回调
+      this.triggerEvent('closed', this.data.name)
     }
   }
 })
