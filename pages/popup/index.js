@@ -21,5 +21,12 @@ Page({
     this.setData({
       [`visible.${e.currentTarget.dataset.type}`]: true
     })
+  },
+  close({ detail }) {
+    console.log('关闭回调', detail)
+  },
+  closed({ detail }) {
+    console.log('关闭动画结束的回调', detail)
+    wx.showToast({ title: `弹出层(${detail})的关闭动画结束了`, icon: 'none' })
   }
 })

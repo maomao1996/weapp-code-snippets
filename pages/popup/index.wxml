@@ -12,6 +12,7 @@
   <button type="primary" bindtap="onTap" data-type="transition">关闭过渡效果</button>
   <button type="primary" bindtap="onTap" data-type="input">输入文案</button>
   <button type="primary" bindtap="onTap" data-type="scroll">内部滚动</button>
+  <button type="primary" bindtap="onTap" data-type="close">关闭回调</button>
 </view>
 <popup visible="{{visible.center}}" customCls="w500 h500">
   <view class="box">我是一个 popup 组件(中间弹出)</view>
@@ -81,4 +82,7 @@
       <view>我是一个 popup 组件(滚动)</view>
     </view>
   </scroll-view>
+</popup>
+<popup name="close" visible="{{visible.close}}" position="bottom" round customStyle="height:300rpx" bind:close="close" bind:closed="closed">
+  <view class="box">我是一个 popup 组件(关闭回调)</view>
 </popup>
