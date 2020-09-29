@@ -13,9 +13,9 @@
 
 /* 弹出层样式 */
 .popup-content {
-  overflow-y: auto;
   position: fixed;
   z-index: 1996;
+  max-width: 100%;
   max-height: 100%;
   background-color: #fff;
 }
