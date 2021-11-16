@@ -1,6 +1,9 @@
+.popup {
+  visibility: hidden;
+}
+
 /* 遮罩层样式 */
 .popup-mask {
-  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
@@ -23,7 +26,8 @@
 .popup-center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 .popup-top {
@@ -93,8 +97,12 @@
 }
 
 /* 显示弹出层 */
-.popup-show .popup-mask {
+.popup-show {
   visibility: visible;
+}
+
+.popup-show .popup-mask,
+.popup-show .popup-center {
   opacity: 1;
 }
 
