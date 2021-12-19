@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/maomao1996/weapp-code-snippets#readme",
   "devDependencies": {
-    "miniprogram-api-typings": "^2.11.0"
+    "miniprogram-api-typings": "^3.4.4"
   }
 }
