@@ -93,7 +93,9 @@
 /* 过渡效果 */
 .popup-transition .popup-mask,
 .popup-transition .popup-content {
-  transition: all 0.3s;
+  /* 使用 transition: all 会造成 transitionEnd 事件触发多次 */
+  /* transition: all 0.3s; */
+  transition: opacity, transform 0.3s;
 }
 
 /* 显示弹出层 */
