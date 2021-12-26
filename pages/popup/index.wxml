@@ -41,13 +41,33 @@
 <popup visible="{{visible.round}}" position="bottom" round custom-style="height:300rpx">
   <view class="box">我是一个 popup 组件(显示圆角)</view>
 </popup>
-<popup visible="{{visible.closeable}}" position="bottom" round closeable custom-style="height:300rpx">
+<popup
+  visible="{{visible.closeable}}"
+  position="bottom"
+  round
+  closeable
+  custom-style="height:300rpx"
+>
   <view class="box">我是一个 popup 组件(显示关闭按钮)</view>
 </popup>
-<popup visible="{{visible.mask}}" position="bottom" mask="{{false}}" round closeable custom-class="blue" custom-style="height:300rpx">
+<popup
+  visible="{{visible.mask}}"
+  position="bottom"
+  mask="{{false}}"
+  round
+  closeable
+  custom-class="blue"
+  custom-style="height:300rpx"
+>
   <view class="box">我是一个 popup 组件(隐藏遮罩)</view>
 </popup>
-<popup visible="{{visible.transition}}" position="bottom" transition="{{false}}" round custom-style="height:300rpx">
+<popup
+  visible="{{visible.transition}}"
+  position="bottom"
+  transition="{{false}}"
+  round
+  custom-style="height:300rpx"
+>
   <view class="box">我是一个 popup 组件(关闭过渡效果)</view>
 </popup>
 <popup visible="{{visible.input}}" position="bottom" round custom-style="height:300rpx">
@@ -83,6 +103,14 @@
     </view>
   </scroll-view>
 </popup>
-<popup name="close" visible="{{visible.close}}" position="bottom" round custom-style="height:300rpx" bind:close="close" bind:closed="closed">
+<popup
+  name="close"
+  visible="{{visible.close}}"
+  position="bottom"
+  round
+  custom-style="height:300rpx"
+  bind:close="close"
+  bind:closed="closed"
+>
   <view class="box">我是一个 popup 组件(关闭回调)</view>
 </popup>
