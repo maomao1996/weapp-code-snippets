@@ -1,11 +1,26 @@
 {
-  "pages": ["pages/index/index", "pages/popup/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/popup/index"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "weapp-code-snippets",
     "navigationBarTextStyle": "black"
   },
+  "subpackages": [
+    {
+      "root": "wxsPackage",
+      "name": "wxsPackage",
+      "pages": [
+        "pages/get/index"
+      ]
+    }
+  ],
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

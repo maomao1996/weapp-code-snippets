@@ -1,0 +1,7 @@
+var is = require('./is.wxs')
+var get = require('./get/index.wxs')
+
+module.exports = {
+  isArray: is.isArray,
+  get: get
+}

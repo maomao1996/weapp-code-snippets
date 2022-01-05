@@ -1,0 +1,52 @@
+var REPLACE_REGEXP = require('../../../wxs/get/regexp.wxs')
+
+function stringToPath(string) {
+  return string.split('.').map(function (str) {
+    // 将 [0] 处理成 0
+    return str.replace(REPLACE_REGEXP, '')
+  })
+}
+
+function isArray(value) {
+  return value && value.constructor === 'Array'
+}
+
+function formatKey(key, value) {
+  // 对数组 key 进行格式化
+  if (isArray(value)) {
+    return Number(key)
+  }
+  return key.toString()
+}
+
+module.exports = {
+  // 初步实现
+  get1: function get1(object, path, defaultValue) {
+    // 将字符串 path 转换为数组
+    if (!isArray(path)) {
+      path = stringToPath(path)
+    }
+
+    var i = 0
+    while (object != null && i < path.length) {
+      object = object[path[i++]]
+    }
+
+    return object === undefined ? defaultValue : object
+  },
+
+  // 数组优化
+  get2: function get2(object, path, defaultValue) {
+    // 将字符串 path 转换为数组
+    if (!isArray(path)) {
+      path = stringToPath(path)
+    }
+
+    var i = 0
+    while (object != null && i < path.length) {
+      object = object[formatKey(path[i++], object)]
+    }
+
+    return object === undefined ? defaultValue : object
+  }
+}

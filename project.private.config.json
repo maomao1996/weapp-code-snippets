@@ -1,0 +1,31 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "弹出层",
+          "pathName": "pages/popup/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "在 wxml 中使用 lodash.get",
+          "pathName": "wxsPackage/pages/get/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

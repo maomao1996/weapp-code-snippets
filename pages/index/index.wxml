@@ -2,10 +2,16 @@
   <view class="title">weapp-code-snippets</view>
   <view class="desc">记录微信小程序开发中的血与泪</view>
   <view class="desc">（自定义组件，常用方法等）</view>
-  <view class="nav">
-    <view class="nav-title">自定义组件</view>
-    <navigator class="nav-item" url="/pages/popup/index">
-      Popup 弹出层
+  <view wx:for="{{modules}}" wx:key="name" class="nav">
+    <view class="nav-title">{{item.name}}</view>
+    <navigator
+      wx:for="{{item.data}}"
+      wx:for-item="$item"
+      wx:key="url"
+      class="nav-item"
+      url="{{$item.url}}"
+    >
+      {{$item.name}}
       <image class="nav-icon" src="/assets/icons/arrow.svg" />
     </navigator>
   </view>

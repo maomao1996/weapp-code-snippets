@@ -1,0 +1,17 @@
+<wxs src="./index.wxs" module="util"></wxs>
+<wxs src="/wxs/index.wxs" module="utils"></wxs>
+<mp-cells title="初步实现">
+  <mp-cell title="a.[0].b.c" footer="{{util.get1(object, 'a.[0].b.c', 'default')}}"/>
+  <mp-cell title="['a', '0', 'b', 'c']" footer="{{util.get1(object, ['a', '0', 'b', 'c'], 'default')}}"/>
+  <mp-cell title="a.b.c" footer="{{util.get1(object, 'a.b.c', 'default')}}"/>
+</mp-cells>
+<mp-cells title="属性 key 优化版">
+  <mp-cell title="a.[0].b.c" footer="{{util.get2(object, 'a.[0].b.c', 'default')}}"/>
+  <mp-cell title="['a', '0', 'b', 'c']" footer="{{util.get2(object, ['a', '0', 'b', 'c'], 'default')}}"/>
+</mp-cells>
+<mp-cells title="完整版">
+  <mp-cell title="字符串 1" footer="{{utils.get(object, '1')}}"/>
+  <mp-cell title="数字 1" footer="{{utils.get(object, 1)}}"/>
+  <mp-cell title="10.0.100" footer="{{utils.get(object, '10.0.100', 'default')}}"/>
+  <mp-cell title="['10', '0', '100']" footer="{{utils.get(object, [10, 0, 100], 'default')}}"/>
+</mp-cells>

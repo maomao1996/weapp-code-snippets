@@ -1,0 +1,35 @@
+var is = require('../is.wxs')
+var REPLACE_REGEXP = require('./regexp.wxs')
+
+function stringToPath(string) {
+  return string.split('.').map(function (str) {
+    // 将 [0] 处理成 0
+    return str.replace(REPLACE_REGEXP, '')
+  })
+}
+
+function formatKey(key, target) {
+  // 对数组的 key 进行数字化处理
+  if (is.isArray(target)) {
+    return Number(key)
+  }
+  // 对非数组的 key 进行字符串处理
+  return key.toString()
+}
+
+function get(object, path, defaultValue) {
+  if (typeof path === 'number') {
+    path = [path]
+  } else if (!is.isArray(path)) {
+    path = stringToPath(path)
+  }
+
+  var i = 0
+  while (object != null && i < path.length) {
+    object = object[formatKey(path[i++], object)]
+  }
+
+  return object === undefined ? defaultValue : object
+}
+
+module.exports = get
