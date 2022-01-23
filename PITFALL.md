@@ -36,3 +36,9 @@
   <view>底部元素</view>
 </view>
 ```
+
+## transitionEnd
+
+当使用 `transition: all` 设置过渡时，`transitionEnd` 事件会触发多次
+
+[demo 代码](/components/popup/popup.wxss#L97)
