@@ -95,7 +95,8 @@
 .popup-transition .popup-content {
   /* 使用 transition: all 会造成 transitionEnd 事件触发多次 */
   /* transition: all 0.3s; */
-  transition: opacity, transform 0.3s;
+  transition-property: opacity, transform, visibility;
+  transition-duration: 0.3s;
 }
 
 /* 显示弹出层 */
