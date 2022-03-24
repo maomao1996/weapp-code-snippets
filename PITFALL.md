@@ -37,6 +37,12 @@
 </view>
 ```
 
+## scroll-view 下 fixed 失效
+
+`iOS` 下加了 `-webkit-overflow-scrolling: touch` 后会改变 `fixed` 的行为
+
+[IOS scroll-view 中的自定义组件 fixed 问题](https://developers.weixin.qq.com/community/develop/doc/0000667484c96844b83ac9c7651809)
+
 ## transitionEnd
 
 当使用 `transition: all` 设置过渡时，`transitionEnd` 事件会触发多次
