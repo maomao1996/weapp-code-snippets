@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/popup/index"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,6 +9,13 @@
     "navigationBarTextStyle": "black"
   },
   "subpackages": [
+    {
+      "root": "examplePackage",
+      "name": "examplePackage",
+      "pages": [
+        "pages/popup/index"
+      ]
+    },
     {
       "root": "wxsPackage",
       "name": "wxsPackage",

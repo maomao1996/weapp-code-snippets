@@ -5,7 +5,7 @@ Page({
         name: '自定义组件',
         data: [
           {
-            url: '/pages/popup/index',
+            url: '/examplePackage/pages/popup/index',
             name: 'Popup 弹出层'
           }
         ]
