@@ -9,6 +9,7 @@
 ## 自定义组件
 
 - [x] [Popup 弹出层](/components/popup/popup.md)
+- [x] [悬浮底部栏](/components/footer-bar/footer-bar.js)
 
 ## WXS 方法
 

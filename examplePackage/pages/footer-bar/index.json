@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "悬浮底部栏",
+  "usingComponents": {
+    "footer-bar": "/components/footer-bar/footer-bar"
+  }
+}

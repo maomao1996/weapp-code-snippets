@@ -1,0 +1,9 @@
+<view>
+  <button bind:tap="handleAdd" type="primary">添加按钮</button>
+  <view wx:for="{{100}}">{{item}}</view>
+</view>
+<footer-bar observer="{{btns}}" background="#abcdef">
+  <view class="footer-container">
+    <button wx:for="{{btns}}" key="{{index}}" type="primary">按钮{{index}}</button>
+  </view>
+</footer-bar>

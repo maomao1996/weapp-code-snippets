@@ -13,7 +13,8 @@
       "root": "examplePackage",
       "name": "examplePackage",
       "pages": [
-        "pages/popup/index"
+        "pages/popup/index",
+        "pages/footer-bar/index"
       ]
     },
     {

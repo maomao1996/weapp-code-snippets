@@ -20,6 +20,12 @@
           "scene": null
         },
         {
+          "name": "悬浮底部栏",
+          "pathName": "examplePackage/pages/footer-bar/index",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "在 wxml 中使用 lodash.get",
           "pathName": "wxsPackage/pages/get/index",
           "query": "",

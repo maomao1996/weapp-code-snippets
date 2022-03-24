@@ -7,6 +7,10 @@ Page({
           {
             url: '/examplePackage/pages/popup/index',
             name: 'Popup 弹出层'
+          },
+          {
+            url: '/examplePackage/pages/footer-bar/index',
+            name: '悬浮底部栏'
           }
         ]
       },
