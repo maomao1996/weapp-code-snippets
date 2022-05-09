@@ -48,3 +48,13 @@
 当使用 `transition: all` 设置过渡时，`transitionEnd` 事件会触发多次
 
 [demo 代码](/components/popup/popup.wxss#L97)
+
+## 自定义 tabBar
+
+- 官方推荐使用 `fixed` 配合 `cover-view` `cover-image` 组件去渲染样式，这样会导致自定义的 `popup` 组件无法遮盖 `tabBar`，可以直接使用普通的 `view` 组件渲染样式
+
+- 自定义的 `popup` `dialog` 组件会存在无法遮盖自定义 `tabBar` 的情况，将 `popup` `dialog` 组件的 `z-index` 设置成大于 `9999` 的值即可
+
+- `tab` 的选中态必须在页面上操作，不能在 `tabBar` 组件中去操作，否则组件会闪烁两次
+
+[微信官方文档 — 自定义 tabBar](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/custom-tabbar.html)
