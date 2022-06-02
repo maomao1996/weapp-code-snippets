@@ -104,21 +104,21 @@
   visibility: visible;
 }
 
-.popup-show .popup-mask,
-.popup-show .popup-center {
+.popup-show > .popup-mask,
+.popup-show > .popup-center {
   opacity: 1;
 }
 
-.popup-show .popup-center {
+.popup-show > .popup-center {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.popup-show .popup-top,
-.popup-show .popup-bottom {
+.popup-show > .popup-top,
+.popup-show > .popup-bottom {
   transform: translateY(0);
 }
 
-.popup-show .popup-right,
-.popup-show .popup-left {
+.popup-show > .popup-right,
+.popup-show > .popup-left {
   transform: translateX(0);
 }
